@@ -725,21 +725,12 @@ footer {
     transform: translateY(-3px);
 }
 
-#contact .bottom-area .copyright {
-    position: static !important;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 25px;
-    font-size: 11px !important;
-    color: #d6d6d6;
-    white-space: nowrap;
+footer p {
+    font-size: 13px !important;
+    text-align: center;
+    margin: 5px 0;
 }
 
-#contact .bottom-area .copyright p {
-    font-size: 10px !important;
-    line-height: 1.4 !important;
-    margin: 0 !important;
-    padding: 0 !important;
+footer {
+    font-size: 12px !important;
 }
