@@ -1,0 +1,709 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+
+    background-image: url("LG.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* =========================
+   MAIN PAGE
+   ========================= */
+.main {
+    width: 100%;
+    min-height: 100vh;
+
+    position: relative;
+    overflow: hidden;
+}
+
+/* =========================
+   NAVBAR
+   ========================= */
+
+.navbar {
+    width: 95%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: black;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar ul.nav-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 30px;
+    color: black;
+
+    margin: 0;
+    padding: 20px 25px;
+
+    z-index: 9999;
+}
+
+
+
+.navbar ul li {
+    list-style: none;
+}
+
+.navbar ul li a {
+    position: relative;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px 0;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: rgb(220, 104, 59);
+}
+
+.navbar ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background: rgb(220, 104, 59);
+    border-radius: 5px;
+    transition: width 0.3s ease;
+}
+
+.navbar ul li a:hover::after {
+    width: 100%;
+}
+
+.navbar .logo {
+    position: fixed;
+    left: 25px;
+    top: 5px;
+    width: 120px;
+    height: auto;
+}
+
+/* =========================
+   INFORMATION
+   ========================= */
+
+.info {
+    margin-left: 7%;
+    margin-top: 7%;
+    position: relative;
+    z-index: 2;
+}
+
+.info h1 {
+    font-size: 39px;
+    color: rgb(36, 32, 30);
+}
+
+.info h3 {
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 24px;
+}
+
+.info span {
+    color: rgb(220, 104, 59);
+}
+
+.info a {
+    text-decoration: none;
+    color: aliceblue;
+    background: rgb(36, 32, 30);
+    margin-top: 26px;
+    padding: 10px 18px;
+    border-radius: 10px;
+    display: inline-block;
+    transition: 0.4s ease;
+}
+
+.info a:hover {
+    background: rgb(220, 104, 59);
+}
+
+
+/* =========================
+   PROFILE IMAGE
+   ========================= */
+
+.image {
+    width: 30%;
+    height: 46%;
+    position: absolute;
+    right: 100px;
+    bottom: 0px;
+    mix-blend-mode: multiply;
+    background: white;
+}
+
+.image img {
+    position: absolute;
+    height: 180%;
+    left: 40%;
+    transform: translateX(-55%);
+    bottom: 0;
+    transition: left 2s ease;
+}
+
+.image:hover img {
+    left: 55%;
+}
+
+
+/* =========================
+   SOCIAL MEDIA
+   ========================= */
+
+.social-icons {
+    position: absolute;
+    left: 7%;
+    bottom: 55px;
+    z-index: 5;
+    display: flex;
+    gap: 20px;
+}
+
+.social-icons {
+    position: absolute;
+    left: 7%;
+    bottom: 50px;
+    z-index: 5;
+    display: flex;
+    gap: 20px;
+}
+
+.social-icons ion-icon {
+    font-size: 38px;
+    transition: 0.4s ease;
+}
+
+.fc ion-icon {
+    color: rgb(77, 77, 199);
+}
+
+.ins ion-icon {
+    color: rgb(226, 47, 47);
+}
+
+.tw ion-icon {
+    color: blue;
+}
+
+.social-icons ion-icon:hover {
+    color: rgb(220, 104, 59);
+    transform: translateY(-5px);
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+    position: absolute;
+    left: 7%;
+    bottom: 10px;
+    color: rgb(207, 205, 205);
+    font-size: 20px;
+    z-index: 5;
+
+}
+
+
+/* =========================
+   LOGIN BOX
+   ========================= */
+
+.login-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 320px;
+    padding: 28px;
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    background: rgba(255, 255, 255, 0.25);
+    color: rgb(17, 15, 15);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 8px;
+    z-index: 10;
+}
+
+
+/* =========================
+   SEARCH
+   ========================= */
+
+.search {
+    width: 70%;
+    display: flex;
+    margin-left: auto;
+}
+
+.srch {
+    font-family: sans-serif;
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid #ff7200;
+    color: #000;
+    border-right: none;
+    font-size: 16px;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+
+}
+
+.btn {
+    width: 100px;
+    height: 40px;
+    background: #ff7200;
+    border: 2px solid #ff7200;
+    color: rgb(27, 29, 31);
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    cursor: pointer;
+}
+
+.srch:focus {
+    outline: none;
+}
+
+
+/* =========================
+   TABLET
+   ========================= */
+
+@media screen and (max-width: 900px) {
+
+    .navbar {
+        padding-right: 25px;
+    }
+
+    .navbar ul {
+        gap: 18px;
+    }
+
+    .navbar ul li a {
+        font-size: 14px;
+    }
+
+    .image {
+        right: 20px;
+    }
+}
+
+
+/* =========================
+   PHONE
+   ========================= */
+
+@media screen and (max-width: 768px) {
+
+    /* MOBILE NAVIGATION */
+    .navbar {
+        width: 100%;
+        height: 75px;
+        display: flex;
+        align-items: center;
+        position: flex;
+    }
+
+    /* LOGO */
+    .navbar .logo {
+        position: flex;
+        left: 10px;
+        top: 8px;
+        width: 55px;
+    }
+
+    /* MENU */
+    .navbar ul {
+        width: calc(100% - 75px);
+        margin-left: 75px;
+        padding: 0 8px 0 0;
+        size: 20PX;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+
+    }
+
+    .navbar ul li {
+        list-style: none;
+    }
+
+    .navbar ul li a {
+        font-size: 10px;
+        font-weight: bold;
+        white-space: nowrap;
+    }
+
+    .navbar ul.nav-menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        right: -4%;
+        gap: 9px;
+        color: black;
+
+        margin: 0;
+        padding: 20px 25px;
+
+        z-index: 9999;
+    }
+
+
+    .image {
+        position: absolute;
+        width: 100%;
+        height: 75%;
+        right: 0;
+        bottom: 0;
+
+        background: transparent;
+        mix-blend-mode: multiply;
+    }
+
+    .image img {
+        position: absolute;
+        height: 150%;
+        width: 70%;
+        left: 50%;
+        bottom: 100px;
+
+        transform: translateX(-50%);
+        mix-blend-mode: multiply;
+    }
+
+}
+
+/* SOCIAL ICONS - PHONE */
+.fc,
+.ins,
+.tw {
+    position: relative;
+}
+
+.fc ion-icon,
+.ins ion-icon,
+.tw ion-icon {
+    font-size: 28px;
+    margin-left: 0;
+    margin-right: 15px;
+}
+
+/* Put the icons near the bottom */
+.fc {
+    margin-left: 7%;
+    bottom: 70px;
+}
+
+.ins,
+.tw {
+    margin-left: 0;
+    bottom: 70px;
+}
+
+/* FOOTER */
+
+footer {
+    position: absolute;
+    left: 7%;
+    bottom: 10px;
+
+    color: rgb(218, 214, 214);
+    font-size: 14px;
+    z-index: 5;
+}
+
+
+/* =========================
+   SMALL PHONE
+   ========================= */
+
+@media screen and (max-width: 480px) {
+
+    .navbar .logo {
+        width: 80px;
+    }
+
+    .navbar ul {
+        gap: 3px;
+    }
+
+    .navbar ul li {
+        padding: 4px;
+    }
+
+    .navbar ul li a {
+        font-size: 10px;
+    }
+
+    .info {
+        margin-top: 25px;
+    }
+
+    .info h1 {
+        font-size: 25px;
+    }
+
+    .info h3 {
+        font-size: 13px;
+    }
+
+    .image {
+        height: 300px;
+    }
+
+    .social-icons ion-icon {
+        font-size: 28px;
+    }
+
+    footer {
+        font-size: 10px;
+    }
+}
+
+/* =========================
+   WEBSITE SECTIONS
+   ========================= */
+.section {
+    min-height: 20vh;
+    padding: 70px 7%;
+    background: transparent;
+    color: #24201e;
+}
+
+.section h2 {
+    font-size: 40px;
+    margin-bottom: 25px;
+    color: rgb(220, 104, 59);
+}
+
+.section p {
+    max-width: 700px;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+
+/* SKILLS */
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.skills-list div {
+    padding: 15px 25px;
+    border-radius: 10px;
+    background: #24201e;
+    color: white;
+    transition: 0.3s ease;
+}
+
+.skills-list div:hover {
+    background: rgb(220, 104, 59);
+    transform: translateY(-5px);
+}
+
+
+/* PROJECTS */
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.project {
+    width: 280px;
+    padding: 25px;
+    border-radius: 12px;
+    background: #918d8d;
+    transition: 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-8px);
+}
+
+.project h3 {
+    margin-bottom: 10px;
+}
+
+.section h3 {
+    color: #e2e2e2;
+}
+
+.section .ph {
+    color: #d1cfcf;
+}
+
+.wd {
+    color: #cfcaca;
+}
+
+/* BOTTOM AREA
+
+.bottom-area {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+    z-index: 20;
+}
+
+.hire-btn {
+    display: inline-block;
+    background: #211c1c;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 12px;
+    text-decoration: none;
+}
+
+.hire-btn:hover {
+    background: rgb(220, 104, 59);
+}
+
+.bottom-area .social-icons {
+    position: static;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+
+.bottom-area .social-icons a {
+    margin: 0;
+    bottom: auto;
+}
+
+.bottom-area .social-icons ion-icon {
+    font-size: 30px;
+}
+
+.bottom-area footer {
+    position: static;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+} */
+/* CONTACT BOTTOM AREA */
+/* PUT EVERYTHING ON ONE LINE */
+
+#contact .bottom-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    width: 100%;
+    margin-top: 50px;
+    position: static;
+    transform: none;
+}
+
+/* HIRE ME */
+#contact .hire-btn {
+    display: inline-block;
+    margin: 0;
+    white-space: nowrap;
+}
+
+/* SOCIAL ICONS */
+#contact .social-icons {
+    position: static;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+#contact .social-icons a {
+    position: static;
+    margin: 0;
+    bottom: auto;
+}
+
+/* COPYRIGHT */
+#contact .bottom-area footer {
+    position: static;
+    margin: 0;
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+/* MOBILE */
+@media screen and (max-width: 650px) {
+    #contact .bottom-area {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+
+/* RESTORE ORIGINAL HIRE ME BUTTON */
+
+#contact .bottom-area .hire-btn {
+    display: inline-block;
+    background: rgb(36, 32, 30);
+    color: aliceblue;
+    text-decoration: none;
+
+    padding: 10px 18px;
+    border-radius: 10px;
+    margin: 0;
+
+    font-size: 16px;
+    font-weight: normal;
+    transition: 0.4s ease;
+}
+
+#contact .bottom-area .hire-btn:hover {
+    background: rgb(220, 104, 59);
+}
