@@ -120,12 +120,12 @@ body {
 }
 
 .info h1 {
-    font-size: 39px;
-    color: rgb(36, 32, 30);
+    font-size: 50px;
+    color: rgb(8, 8, 8);
 }
 
-.info h3 {
-    font-size: 18px;
+.info h2 {
+    font-size: 40px;
     letter-spacing: 1px;
     line-height: 24px;
 }
@@ -134,15 +134,10 @@ body {
     color: rgb(220, 104, 59);
 }
 
-.info a {
-    text-decoration: none;
-    color: aliceblue;
-    background: rgb(36, 32, 30);
-    margin-top: 26px;
-    padding: 10px 18px;
-    border-radius: 10px;
-    display: inline-block;
-    transition: 0.4s ease;
+.info h4  {
+   
+    color: rgb(172, 173, 173);
+    font-size:20px
 }
 
 .info a:hover {
@@ -215,6 +210,11 @@ body {
 
 .tw ion-icon {
     color: blue;
+}
+
+.gh {
+    color: white;
+     
 }
 
 .social-icons ion-icon:hover {
@@ -708,19 +708,37 @@ footer {
     background: rgb(220, 104, 59);
 }
 
-.hire-btn {
+.work-btn {
     display: inline-block;
     background: rgb(36, 32, 30);
-    color: aliceblue;
+    color: rgb(191, 194, 197);
     text-decoration: none;
-    padding: 12px 25px;
+    padding: 10px 10px;
     border-radius: 10px;
-    font-size: 8px;
+    font-size: 15px;
     font-weight: bold;
+    margin-left:20%;
     transition: 0.4s ease;
 }
 
-.hire-btn:hover {
+.work-btn:hover {
+    background: rgb(220, 104, 59);
+    transform: translateY(-3px);
+}
+.phone-btn {
+    display: inline-block;
+    background: rgb(36, 32, 30);
+    color: rgb(191, 194, 197);
+    text-decoration: none;
+    padding: 10px 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-right:20%;
+    transition: 0.4s ease;
+}
+
+.phone-btn:hover {
     background: rgb(220, 104, 59);
     transform: translateY(-3px);
 }
@@ -784,6 +802,7 @@ footer {
     background: rgb(220, 104, 59);
     color: rgb(36, 32, 30);
 }
-.wh{
-    color:white
+
+.wh {
+    color: white
 }
