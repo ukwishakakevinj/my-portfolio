@@ -155,8 +155,8 @@ body {
    ========================= */
 
 .image {
-    width: 30%;
-    height: 46%;
+    width: 40%;
+    height: 48%;
     position: absolute;
     right: 100px;
     bottom: 0px;
@@ -733,4 +733,57 @@ footer p {
 
 footer {
     font-size: 12px !important;
+}
+
+/* MY DOCUMENTS */
+
+.documents-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.document-card {
+    width: 300px;
+    padding: 25px;
+    background: rgba(124, 123, 123, 0.85);
+    color: rgb(14, 13, 13);
+    border-radius: 12px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.document-card:hover {
+    transform: translateY(-6px);
+}
+
+.document-card h3 {
+    color: rgb(230, 230, 230);
+    margin-bottom: 15px;
+}
+
+.document-card p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.document-btn {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 15px;
+    background: rgb(207, 207, 207);
+    color: black;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 13px;
+    transition: 0.3s ease;
+}
+
+.document-btn:hover {
+    background: rgb(220, 104, 59);
+    color: rgb(36, 32, 30);
+}
+.wh{
+    color:white
 }
