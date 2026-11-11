@@ -164,7 +164,7 @@ body {
     height: 180%;
     left: 40%;
     transform: translateX(-55%);
-    bottom: 0;
+    bottom: -130px;
     transition: left 2s ease;
 }
 
@@ -806,4 +806,18 @@ footer {
 
 .wh {
     color: white
+}
+/* HOME PAGE BUTTONS */
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: 7%;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.hero-buttons .work-btn,
+.hero-buttons .phone-btn {
+    margin: 0;
 }
